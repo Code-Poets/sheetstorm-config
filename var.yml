@@ -1,0 +1,15 @@
+# This variable controls size of the sheetstorm server
+machine_type: f1-micro
+
+# Static IP to be attached to the sheetstorm server
+sheetstorm_ip: 35.234.118.73
+
+# Email account to be attached to Let's Encrypt ssl certificate authority.
+# This account will be receive mails about the expiration of ssl certificates.
+letsencrypt_email_account: bartosz.betka@codepoets.it
+
+# This dictionary contains Google Cloud Project configuration
+gke:
+  project: sheetstorm-230410
+  region:  europe-west3
+  zone:    europe-west3-a
