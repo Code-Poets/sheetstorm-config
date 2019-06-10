@@ -13,3 +13,11 @@ gke:
   project: sheetstorm-230410
   region:  europe-west3
   zone:    europe-west3-a
+
+# This dictionary that contains nginx configuration
+nginx:
+  client_body_timeout:                   5s
+  client_header_timeout:                 5s
+  number_of_open_connections_per_client: 6
+  limit_of_requests_per_second:          5
+  number_of_requests_stored_in_queue:    5
